@@ -55,6 +55,7 @@ export default async function handler(req, res) {
     return res.status(200).json({
       ok: true,
       access_token: data.session.access_token,
+      refresh_token: data.session.refresh_token,
       user: {
         id: user.id,
         email: user.email,
